@@ -1,13 +1,12 @@
 import React from 'react'
-
-export default function VideoList() {
+import VideoListEntry from "./VideoListEntry"
+export default function VideoList(props) {
   return (
     <div className="video-list">
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
+      
+    {props.videos.map((el)=>(<div><h5><em>videoListEntry {console.log(el)}</em><VideoListEntry /> </h5></div>))}
+    
+ 
   </div> 
    )
 }
