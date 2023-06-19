@@ -11,7 +11,7 @@ export default function VideoListEntry({videoId,info,video}) {
     <div className="media-left media-middle">
       <img className="media-object" src={`https://i.ytimg.com/vi/${videoId}/default.jpg`} alt="" />
     </div>
-   
+  
     <div className="media-body"
     onClick={()=>handelClick(video)}
     >
